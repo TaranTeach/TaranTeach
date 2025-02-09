@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarandeep Kaur - Resume</title>
+  <style>
+    /* Base Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #0056b3;
+      padding: 0.5rem 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #007bff;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <script>
+    function navigate(sectionId) {
+      document.querySelectorAll('section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(sectionId).style.display = 'block';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      navigate('home');
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Tarandeep Kaur</h1>
+    <p>Mathematics & Statistics Teacher with 22+ years of experience</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="navigate('home')">Home</a>
+    <a href="#" onclick="navigate('experience')">Experience</a>
+    <a href="#" onclick="navigate('education')">Education</a>
+    <a href="#" onclick="navigate('contact')">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>About Me</h2>
+    <p>A passionate Mathematics & Statistics Teacher with 22+ years of experience in imparting quality education to high school learners while gently molding their personalities into responsible and ethical global citizens.</p>
+  </section>
+
+  <section id="experience" style="display:none;">
+    <h2>Experience</h2>
+    <ul>
+      <li>Lilavatibai Podar School, Mumbai (Math Teacher) - Taught and assessed over 3000+ students using interactive methods and digital tools.</li>
+      <li>ICSE Corrector and Moderator - Evaluated 5000+ papers, provided key discussion insights.</li>
+      <li>Coordinated inter-house activities and events for student development.</li>
+    </ul>
+  </section>
+
+  <section id="education" style="display:none;">
+    <h2>Education</h2>
+    <ul>
+      <li>M.Sc in Statistics, Mumbai University - Secured first rank in Statistics for second and third-year B.Sc.</li>
+      <li>MBA in Finance, Symbiosis Institute - Graduated with distinction.</li>
+      <li>B.Ed in Mathematics and English, IGNOU University - First Division.</li>
+    </ul>
+  </section>
+
+  <section id="contact" style="display:none;">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:taran.k.09@gmail.com">taran.k.09@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919820994278">+91 9820994278</a></p>
+    <p>Location: Andheri, Mumbai</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tarandeep Kaur. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
